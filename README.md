@@ -1,3 +1,5 @@
+Adapted to Ubuntu AMI
+
 # ec2-auto-shutdown
 
 *ec2-auto-shutdown* is a systemd service that helps you reduce AWS costs. 
@@ -6,7 +8,7 @@ It will shut down an instance automatically when there is no SSH activity for co
 ## Installation
 
 ```sh
-$ curl -o- https://raw.githubusercontent.com/bokan/ec2-auto-shutdown/master/install.sh | sudo bash
+$ curl -o- https://raw.githubusercontent.com/Usiel/ec2-auto-shutdown/master/install.sh | sudo bash
 ```
 
 ## Configuration
@@ -15,6 +17,6 @@ Config file is located at */etc/ec2-auto-shutdown/ec2-auto-shutdown-config*.
 
 Restart service after making changes using:
 ```sh
-$ sudo systemctl restart ec2-auto-shutdown
+$ sudo service restart ec2-auto-shutdown
 ```
 
